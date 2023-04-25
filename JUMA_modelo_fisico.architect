@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.9">
+ <project-name>JUMA_modelo_fisico</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="c18a39e9-d06e-4a15-8101-5ab8d22948a7" name="CLIENTE" objectType="TABLE" physicalName="Tb_CLIENTE" >
+   <remarks>essa tabela representa os clientes cadastrados</remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL2" populated="true" UUID="2cbc2ccb-25cd-41e9-8628-32bcd5eca362" autoIncrement="false" autoIncrementSequenceName="Tb_CLIENTE_Tb_CLIENTE_seq" defaultValue="" name="CLIENTE" nullable="0" physicalName="Tb_CLIENTE" precision="7" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>essa coluna é referente aos clientes cadastrados</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB13" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX3" populated="true" UUID="3f0b79d7-a9db-4242-8012-d3f1f6c8a636" clustered="false" name="Tb_CLIENTE_pk" physicalName="Tb_CLIENTE_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC4" populated="true" UUID="a40ed1ff-441d-4235-88fe-f7bb5e976e6e" ascendingOrDescending="UNSPECIFIED" column-ref="COL2" name="CLIENTE" physicalName="Tb_CLIENTE" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB5" populated="true" UUID="ea7e0ddb-753d-4110-9287-4738dd706065" name="PEDIDO" objectType="TABLE" physicalName="Tb_PEDIDO" >
+   <remarks>essa tabela é referente aos pedidos feitos</remarks>
+   <folder id="FOLTAB51" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL6" populated="true" UUID="10f46d28-f35b-45a1-ae85-8b17d35bbe38" autoIncrement="false" autoIncrementSequenceName="Tb_PEDIDO_Tb_PEDIDO_pk_seq" defaultValue="" name="PEDIDO" nullable="0" physicalName="Tb_PEDIDO_pk" precision="7" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>essa coluna é referente aos pedidos feitos</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB53" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB52" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB54" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX7" populated="true" UUID="30b6ee5b-662d-46bf-a55c-d96c05f0adce" clustered="false" name="Tb_PEDIDO_pk" physicalName="Tb_PEDIDO_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC8" populated="true" UUID="fcba0031-95d2-4170-9c08-8e27ac275e43" ascendingOrDescending="UNSPECIFIED" column-ref="COL6" name="PEDIDO" physicalName="Tb_PEDIDO_pk" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB9" populated="true" UUID="78036d3f-b55d-4646-9ac6-b585b76caa09" name="EDITORA" objectType="TABLE" physicalName="Tb_EDITORA" >
+   <remarks>essa tabela é referente a editora</remarks>
+   <folder id="FOLTAB91" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL10" populated="true" UUID="a9e52554-c60c-47e3-83a0-098372514a51" autoIncrement="false" autoIncrementSequenceName="Tb_EDITORA_Tb_EDITORA_pk_seq" defaultValue="" name="EDITORA" nullable="0" physicalName="Tb_EDITORA_pk" precision="7" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>essa coluna é refente a editora</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB93" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB92" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB94" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX11" populated="true" UUID="6e543592-2a6f-44d0-be5e-2c580d72ce6b" clustered="false" name="Tb_EDITORA_pk" physicalName="Tb_EDITORA_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC12" populated="true" UUID="576e0a0d-b825-434b-b3a9-7ec867e67834" ascendingOrDescending="UNSPECIFIED" column-ref="COL10" name="EDITORA" physicalName="Tb_EDITORA_pk" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB13" populated="true" UUID="935715dc-496a-469c-9693-f875679f0623" name="LIVRO" objectType="TABLE" physicalName="Tb_LIVRO" >
+   <remarks>essa tabela é referente aos livros</remarks>
+   <folder id="FOLTAB131" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL14" populated="true" UUID="a69a2ca1-12b2-498d-ade5-1aa8607daa75" autoIncrement="false" autoIncrementSequenceName="Tb_LIVRO_Tb_LIVRO_pk_seq" defaultValue="" name="LIVRO" nullable="0" physicalName="Tb_LIVRO_pk" precision="7" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>essa coluna é referente aos livros</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB133" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB132" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB134" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX15" populated="true" UUID="f0ca814e-3a07-4530-a300-f82c406aadca" clustered="false" name="Tb_LIVRO_pk" physicalName="Tb_LIVRO_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC16" populated="true" UUID="1b1e4b0a-bb98-40dd-a0ca-dd6ffa46e45a" ascendingOrDescending="UNSPECIFIED" column-ref="COL14" name="LIVRO" physicalName="Tb_LIVRO_pk" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="756" y="263" bgColor="0xbfd6ff" fgColor="0x5a6986" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB5" x="469" y="264" bgColor="0xbfd6ff" fgColor="0x5a6986" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB9" x="1050" y="269" bgColor="0xbfd6ff" fgColor="0x5a6986" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB13" x="476" y="316" bgColor="0xbfd6ff" fgColor="0x5a6986" rounded="false" dashed="false"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>
